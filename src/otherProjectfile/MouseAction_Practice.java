@@ -1,4 +1,4 @@
-package day2;
+package otherProjectfile;
 
 import java.io.IOException;
 
@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+
+import day2.Browser;
 
 public class MouseAction_Practice {
 public static void main(String []args) throws IOException, InterruptedException {
@@ -24,7 +26,6 @@ public static void main(String []args) throws IOException, InterruptedException 
 	Thread.sleep(2000);
 	Screenshot.takescreenshot(driver);	
 	Thread.sleep(2000);
-	
 
 	
 	WebElement order=driver.findElement(By.xpath("//div[@class='a-box ya-card--rich']"));

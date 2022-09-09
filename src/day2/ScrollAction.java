@@ -34,7 +34,7 @@ public class ScrollAction {
 	
 // scroll by using till the bottom
 		
-		//js.executeScript("wiindow.scrollTo(0,documents.body.scrollHight)");
+		js.executeScript("window.scrollTo(0,documents.body.scrollHight)");
 	}
 		
 		

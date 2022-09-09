@@ -1,4 +1,4 @@
-package day2;
+package otherProjectfile;
 
 import java.awt.AWTException;
 import java.awt.HeadlessException;
@@ -15,6 +15,8 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
+import day2.DateTime;
+
 public class Screenshot {
 
 	/*-------------1st type of Screenshot method---------------*/
@@ -25,7 +27,7 @@ public class Screenshot {
 
 		TakesScreenshot ts = (TakesScreenshot) driver;
 		File Source = ts.getScreenshotAs(OutputType.FILE);
-		// File Distination =new File("F:\\TESTING\\AUTOMATION\\Automation Screenshot\\Screenshot "+d+".png");
+		// File Distination =new File("F:\\TESTING\\AUTOMATION\\Automation Screenshot/\\Screenshot "+d+".png");
 		File Distination = new File("F:\\TESTING\\Eclipse IDE\\eclipse-workspace\\Automation\\src\\Screenshot\\Screenshot "+d+".png");
 	FileHandler.copy(Source, Distination);
 	//FileUtils.copyFile(Source, Distination);
